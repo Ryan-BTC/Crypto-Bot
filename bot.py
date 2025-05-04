@@ -150,7 +150,7 @@ def on_message(ws, message):
                     if in_position:
                         order = create_order(SYMBOL, 'sell', ORDER_TYPE_MARKET, quantity=rounded_amount)
                         in_position = False
-                        # print(order)
+                        print(order)
                     else:
                         print("You aren't in position nothing to Sell")
     except Exception as e:
